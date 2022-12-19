@@ -1,0 +1,11 @@
+
+kibot:
+  version: 1
+
+outputs:
+
+
+- name: basic_ibom
+  comment: Interactive HTML BoM
+  type: ibom
+  dir: BoM

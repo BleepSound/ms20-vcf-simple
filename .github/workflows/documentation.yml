@@ -1,0 +1,107 @@
+name: Documentation
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Design version"
+        required: true
+        default: "pre-release"
+
+jobs:
+  Documentation-global:
+    env:
+    # Set this to the base filename of your project.
+    BaseFileName: MS20-VCF
+    # Set this to your local timezone. See https://www.wikiwand.com/en/List_of_tz_database_time_zones for valid strings.
+    Timezone: Europe/Paris
+    # Set this to the output folder for all of the generated files. Unless you have a very
+    # good reason to change this you should leave it as KiBotOutput.
+    BOMFolder: BoM
+    # Set this to the output folder for all of the generated files. Unless you have a very
+    # good reason to change this you should leave it as KiBotOutput.
+    DocFolder: Documentation
+    # Set this to the output folder for all of the generated files. Unless you have a very
+    # good reason to change this you should leave it as KiBotOutput.
+    GerberFolder: Gerber
+    # Set this to the version to include in the schematic and PCB. Since this
+    # script runs outside of the release process it can't pull a version
+    # number automatically from GitHub.
+    Version: pre-release
+
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    
+    # Get the current date
+    - name: Get current date
+      id: date_only
+      run: echo "::set-output name=date_only::$(TZ='${{ env.Timezone }}' date +'%Y-%m-%d')"
+    
+    - name: Generate schematic documentation
+    - uses: INTI-CMNB/KiBot@v2_k6
+      with:
+        # Required - kibot config file
+        config: .kibot/config_bom_global.kibot.yaml
+        dir: ${{ env.DocFolder }}
+        schema: ${{ env.BaseFileName }}.sch
+        board: ${{ env.BaseFileName }}.kicad_pcb
+        
+    # Archive all the artifacts from output and attach to the action's results.
+    - name: Archive production artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: ${{ env.BaseFileName }}-${{ github.event.inputs.version }}-${{ steps.date_only.outputs.date_only }}
+        path: ${{ env.DocFolder }}/**
+
+  BOM-front:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    
+    # Get the current date
+    - name: Get current date
+      id: date_only
+      run: echo "::set-output name=date_only::$(TZ='${{ env.Timezone }}' date +'%Y-%m-%d')"
+    
+    - name: Generate schematic documentation
+    - uses: INTI-CMNB/KiBot@v2_k6
+      with:
+        # Required - kibot config file
+        config: .kibot/config_bom_local.kibot.yaml
+        dir: ${{ env.BOMFolder }}
+        #schema: ${{ env.BaseFileName }}.sch
+        board: /fabrication/front/${{ env.BaseFileName }}.kicad_pcb
+        
+    # Archive all the artifacts from output and attach to the action's results.
+    - name: Archive production artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: ${{ env.BaseFileName }}-${{ github.event.inputs.version }}-${{ steps.date_only.outputs.date_only }}
+        path: ${{ env.BOMFolder }}/**
+
+    BOM-jack:
+      runs-on: ubuntu-latest
+      steps:
+      - uses: actions/checkout@v3
+      
+      # Get the current date
+      - name: Get current date
+        id: date_only
+        run: echo "::set-output name=date_only::$(TZ='${{ env.Timezone }}' date +'%Y-%m-%d')"
+      
+      - name: Generate schematic documentation
+      - uses: INTI-CMNB/KiBot@v2_k6
+        with:
+          # Required - kibot config file
+          config: .kibot/config_bom_local.kibot.yaml
+          dir: ${{ env.BOMFolder }}
+          #schema: ${{ env.BaseFileName }}.sch
+          board: /fabrication/jackboard/${{ env.BaseFileName }}.kicad_pcb
+          
+      # Archive all the artifacts from output and attach to the action's results.
+      - name: Archive production artifacts
+        uses: actions/upload-artifact@v2
+        with:
+          name: ${{ env.BaseFileName }}-${{ github.event.inputs.version }}-${{ steps.date_only.outputs.date_only }}
+          path: ${{ env.BOMFolder }}/**
