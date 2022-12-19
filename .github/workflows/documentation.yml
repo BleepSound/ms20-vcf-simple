@@ -39,7 +39,7 @@ jobs:
       run: echo "::set-output name=date_only::$(TZ='${{ env.Timezone }}' date +'%Y-%m-%d')"
     
     - name: Generate schematic documentation
-    - uses: INTI-CMNB/KiBot@v2_k6
+      uses: INTI-CMNB/KiBot@v2_k6
       with:
         # Required - kibot config file
         config: .kibot/config_bom_global.kibot.yaml
@@ -65,7 +65,7 @@ jobs:
       run: echo "::set-output name=date_only::$(TZ='${{ env.Timezone }}' date +'%Y-%m-%d')"
     
     - name: Generate schematic documentation
-    - uses: INTI-CMNB/KiBot@v2_k6
+      uses: INTI-CMNB/KiBot@v2_k6
       with:
         # Required - kibot config file
         config: .kibot/config_bom_local.kibot.yaml
@@ -91,7 +91,7 @@ jobs:
         run: echo "::set-output name=date_only::$(TZ='${{ env.Timezone }}' date +'%Y-%m-%d')"
       
       - name: Generate schematic documentation
-      - uses: INTI-CMNB/KiBot@v2_k6
+        uses: INTI-CMNB/KiBot@v2_k6
         with:
           # Required - kibot config file
           config: .kibot/config_bom_local.kibot.yaml
