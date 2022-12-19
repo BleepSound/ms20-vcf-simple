@@ -81,28 +81,28 @@ jobs:
         name: ${{ env.BaseFileName }}-${{ github.event.inputs.version }}-${{ steps.date_only.outputs.date_only }}
         path: ${{ env.BOMFolder }}/**
 
-    BOM-jack:
-      runs-on: ubuntu-latest
-      steps:
-      - uses: actions/checkout@v3
-      
-      # Get the current date
-      - name: Get current date
-        id: date_only
-        run: echo "::set-output name=date_only::$(TZ='${{ env.Timezone }}' date +'%Y-%m-%d')"
-      
-      - name: Generate schematic documentation
-        uses: INTI-CMNB/KiBot@v2_k6
-        with:
-          # Required - kibot config file
-          config: .kibot/config_bom_local.kibot.yaml
-          dir: ${{ env.BOMFolder }}
-          #schema: ${{ env.BaseFileName }}.sch
-          board: /fabrication/jackboard/${{ env.BaseFileName }}.kicad_pcb
-          
-      # Archive all the artifacts from output and attach to the action's results.
-      - name: Archive production artifacts
-        uses: actions/upload-artifact@v2
-        with:
-          name: ${{ env.BaseFileName }}-${{ github.event.inputs.version }}-${{ steps.date_only.outputs.date_only }}
-          path: ${{ env.BOMFolder }}/**
+  BOM-jack:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    
+    # Get the current date
+    - name: Get current date
+      id: date_only
+      run: echo "::set-output name=date_only::$(TZ='${{ env.Timezone }}' date +'%Y-%m-%d')"
+    
+    - name: Generate schematic documentation
+      uses: INTI-CMNB/KiBot@v2_k6
+      with:
+        # Required - kibot config file
+        config: .kibot/config_bom_local.kibot.yaml
+        dir: ${{ env.BOMFolder }}
+        #schema: ${{ env.BaseFileName }}.sch
+        board: /fabrication/jackboard/${{ env.BaseFileName }}.kicad_pcb
+        
+    # Archive all the artifacts from output and attach to the action's results.
+    - name: Archive production artifacts
+      uses: actions/upload-artifact@v2
+      with:
+        name: ${{ env.BaseFileName }}-${{ github.event.inputs.version }}-${{ steps.date_only.outputs.date_only }}
+        path: ${{ env.BOMFolder }}/**
