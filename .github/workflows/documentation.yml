@@ -8,26 +8,27 @@ on:
         required: true
         default: "pre-release"
 
+env:
+  # Set this to the base filename of your project.
+  BaseFileName: MS20-VCF
+  # Set this to your local timezone. See https://www.wikiwand.com/en/List_of_tz_database_time_zones for valid strings.
+  Timezone: Europe/Paris
+  # Set this to the output folder for all of the generated files. Unless you have a very
+  # good reason to change this you should leave it as KiBotOutput.
+  BOMFolder: BoM
+  # Set this to the output folder for all of the generated files. Unless you have a very
+  # good reason to change this you should leave it as KiBotOutput.
+  DocFolder: Documentation
+  # Set this to the output folder for all of the generated files. Unless you have a very
+  # good reason to change this you should leave it as KiBotOutput.
+  GerberFolder: Gerber
+  # Set this to the version to include in the schematic and PCB. Since this
+  # script runs outside of the release process it can't pull a version
+  # number automatically from GitHub..
+  Version: pre-release
+
 jobs:
   Documentation-global:
-    env:
-    # Set this to the base filename of your project.
-    BaseFileName: MS20-VCF
-    # Set this to your local timezone. See https://www.wikiwand.com/en/List_of_tz_database_time_zones for valid strings.
-    Timezone: Europe/Paris
-    # Set this to the output folder for all of the generated files. Unless you have a very
-    # good reason to change this you should leave it as KiBotOutput.
-    BOMFolder: BoM
-    # Set this to the output folder for all of the generated files. Unless you have a very
-    # good reason to change this you should leave it as KiBotOutput.
-    DocFolder: Documentation
-    # Set this to the output folder for all of the generated files. Unless you have a very
-    # good reason to change this you should leave it as KiBotOutput.
-    GerberFolder: Gerber
-    # Set this to the version to include in the schematic and PCB. Since this
-    # script runs outside of the release process it can't pull a version
-    # number automatically from GitHub.
-    Version: pre-release
 
     runs-on: ubuntu-latest
     steps:
