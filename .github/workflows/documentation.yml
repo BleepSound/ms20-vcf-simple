@@ -43,7 +43,7 @@ jobs:
       uses: INTI-CMNB/KiBot@v2_k6
       with:
         # Required - kibot config file
-        config: .kibot/config_bom_global.kibot.yaml
+        config: .kibot/config_doc_global.kibot.yaml
         dir: ${{ env.DocFolder }}
         schema: ${{ env.BaseFileName }}.sch
         board: ${{ env.BaseFileName }}.kicad_pcb
@@ -72,7 +72,7 @@ jobs:
         config: .kibot/config_bom_local.kibot.yaml
         dir: ${{ env.BOMFolder }}
         #schema: ${{ env.BaseFileName }}.sch
-        board: /fabrication/front/${{ env.BaseFileName }}.kicad_pcb
+        board: fabrication/front/${{ env.BaseFileName }}.kicad_pcb
         
     # Archive all the artifacts from output and attach to the action's results.
     - name: Archive production artifacts
@@ -98,7 +98,7 @@ jobs:
         config: .kibot/config_bom_local.kibot.yaml
         dir: ${{ env.BOMFolder }}
         #schema: ${{ env.BaseFileName }}.sch
-        board: /fabrication/jackboard/${{ env.BaseFileName }}.kicad_pcb
+        board: fabrication/jackboard/${{ env.BaseFileName }}.kicad_pcb
         
     # Archive all the artifacts from output and attach to the action's results.
     - name: Archive production artifacts
