@@ -45,14 +45,14 @@ jobs:
         # Required - kibot config file
         config: .kibot/config_doc_global.kibot.yaml
         dir: ${{ env.DocFolder }}
-        schema: kicad-global/${{ env.BaseFileName }}.sch
+        schema: kicad-global/${{ env.BaseFileName }}.kicad_sch
         board: kicad-global/${{ env.BaseFileName }}.kicad_pcb
         
     # Archive all the artifacts from output and attach to the action's results.
     - name: Archive production artifacts
       uses: actions/upload-artifact@v2
       with:
-        name: ${{ env.BaseFileName }}-${{ github.event.inputs.version }}-${{ steps.date_only.outputs.date_only }}
+        name: ${{ env.BaseFileName }}-Doc-${{ github.event.inputs.version }}-${{ steps.date_only.outputs.date_only }}
         path: ${{ env.DocFolder }}/**
 
   BOM-front:
@@ -71,14 +71,13 @@ jobs:
         # Required - kibot config file
         config: .kibot/config_bom_local.kibot.yaml
         dir: ${{ env.BOMFolder }}
-        #schema: ${{ env.BaseFileName }}.sch
         board: fabrication/front/${{ env.BaseFileName }}.kicad_pcb
         
     # Archive all the artifacts from output and attach to the action's results.
     - name: Archive production artifacts
       uses: actions/upload-artifact@v2
       with:
-        name: ${{ env.BaseFileName }}-${{ github.event.inputs.version }}-${{ steps.date_only.outputs.date_only }}
+        name: ${{ env.BaseFileName }}-Front-${{ github.event.inputs.version }}-${{ steps.date_only.outputs.date_only }}
         path: ${{ env.BOMFolder }}/**
 
   BOM-jack:
@@ -97,12 +96,11 @@ jobs:
         # Required - kibot config file
         config: .kibot/config_bom_local.kibot.yaml
         dir: ${{ env.BOMFolder }}
-        #schema: ${{ env.BaseFileName }}.sch
         board: fabrication/jackboard/${{ env.BaseFileName }}.kicad_pcb
         
     # Archive all the artifacts from output and attach to the action's results.
     - name: Archive production artifacts
       uses: actions/upload-artifact@v2
       with:
-        name: ${{ env.BaseFileName }}-${{ github.event.inputs.version }}-${{ steps.date_only.outputs.date_only }}
+        name: ${{ env.BaseFileName }}-jackboard-${{ github.event.inputs.version }}-${{ steps.date_only.outputs.date_only }}
         path: ${{ env.BOMFolder }}/**
