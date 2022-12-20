@@ -37,7 +37,7 @@ jobs:
     # Get the current date
     - name: Get current date
       id: date_only
-      run: echo "::set-output name=date_only::$(TZ='${{ env.Timezone }}' date +'%Y-%m-%d')"
+      run: echo "{date_only}={$(TZ='${{ env.Timezone }}' date +'%Y-%m-%d')}" >> $GITHUB_OUTPUT
     
     - name: Generate schematic documentation
       uses: INTI-CMNB/KiBot@v2_k6
@@ -50,7 +50,7 @@ jobs:
         
     # Archive all the artifacts from output and attach to the action's results.
     - name: Archive production artifacts
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: ${{ env.BaseFileName }}-Doc-${{ github.event.inputs.version }}-${{ steps.date_only.outputs.date_only }}
         path: ${{ env.DocFolder }}/**
@@ -75,7 +75,7 @@ jobs:
         
     # Archive all the artifacts from output and attach to the action's results.
     - name: Archive production artifacts
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: ${{ env.BaseFileName }}-Front-${{ github.event.inputs.version }}-${{ steps.date_only.outputs.date_only }}
         path: ${{ env.BOMFolder }}/**
@@ -100,7 +100,7 @@ jobs:
         
     # Archive all the artifacts from output and attach to the action's results.
     - name: Archive production artifacts
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: ${{ env.BaseFileName }}-jackboard-${{ github.event.inputs.version }}-${{ steps.date_only.outputs.date_only }}
         path: ${{ env.BOMFolder }}/**
