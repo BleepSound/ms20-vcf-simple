@@ -63,7 +63,7 @@ jobs:
     # Get the current date
     - name: Get current date
       id: date_only
-      run: echo "::set-output name=date_only::$(TZ='${{ env.Timezone }}' date +'%Y-%m-%d')"
+      run: echo "{date_only}={$(TZ='${{ env.Timezone }}' date +'%Y-%m-%d')}" >> $GITHUB_OUTPUT
     
     - name: Generate schematic documentation
       uses: INTI-CMNB/KiBot@v2_k6
@@ -88,7 +88,7 @@ jobs:
     # Get the current date
     - name: Get current date
       id: date_only
-      run: echo "::set-output name=date_only::$(TZ='${{ env.Timezone }}' date +'%Y-%m-%d')"
+      run: echo "{date_only}={$(TZ='${{ env.Timezone }}' date +'%Y-%m-%d')}" >> $GITHUB_OUTPUT
     
     - name: Generate schematic documentation
       uses: INTI-CMNB/KiBot@v2_k6
