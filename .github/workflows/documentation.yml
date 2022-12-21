@@ -77,8 +77,8 @@ jobs:
       uses: INTI-CMNB/KiBot@v2_k6
       with:
         # Required - kibot config file
-        config: .kibot/config_bom_local.kibot.yaml
-        dir: ${{ env.BOMFolder }}
+        config: .kibot/config_bom_jack.kibot.yaml
+        dir: ${{ env.DocFolder }}
         board: fabrication/jackboard/${{ env.BaseFileName }}.kicad_pcb
         
     # Archive all the artifacts from output and attach to the action's results.
@@ -86,4 +86,12 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: ${{ env.BaseFileName }}-jackboard-${{ github.event.inputs.version }}-${{ steps.date_only.outputs.date_only }}
-        path: ${{ env.BOMFolder }}/**
+        path: ${{ env.DocFolder }}/**
+
+    #Commit all the outputs to folder
+    - name: Add & Commit
+      uses: EndBug/add-and-commit@v9.1.1
+      with:
+          default_author: github_actions
+          message: 'add jack BoM'
+          tag: ${{ env.Version }}
