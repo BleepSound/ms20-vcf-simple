@@ -132,30 +132,6 @@ outputs:
     map: gerber
     route_mode_for_oval_holes: false
     output: '%f%i.%x'
-- name: JLCPCB_position
-  comment: Pick and place file, JLCPCB style
-  type: position
-  dir: Manufacturers/JLCPCB
-  options:
-    variant: place_holder
-    output: '%f_cpl_jlc.%x'
-    format: CSV
-    units: millimeters
-    separate_files_for_front_and_back: false
-    only_smd: true
-    columns:
-    - id: Ref
-      name: Designator
-    - Val
-    - Package
-    - id: PosX
-      name: Mid X
-    - id: PosY
-      name: Mid Y
-    - id: Rot
-      name: Rotation
-    - id: Side
-      name: Layer
 - name: JLCPCB
   comment: ZIP file for JLCPCB
   type: compress
@@ -165,6 +141,4 @@ outputs:
     - from_output: JLCPCB_gerbers
       dest: /
     - from_output: JLCPCB_drill
-      dest: /
-    - from_output: JLCPCB_position
       dest: /
