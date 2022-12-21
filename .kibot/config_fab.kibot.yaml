@@ -26,11 +26,6 @@ variants:
   - _rot_footprint
 
 outputs:
-- name: basic_boardview
-  comment: Board View export
-  type: boardview
-  dir: Assembly
-
 - name: gerber_modern
   comment: Gerbers in modern format, recommended by the standard
   type: gerber
@@ -161,26 +156,6 @@ outputs:
       name: Rotation
     - id: Side
       name: Layer
-- name: JLCPCB_bom
-  comment: BoM for JLCPCB
-  type: bom
-  dir: Manufacturers/JLCPCB
-  options:
-    output: '%f_%i_jlc.%x'
-    exclude_filter: only_jlc_parts
-    ref_separator: ','
-    columns:
-    - field: Value
-      name: Comment
-    - field: References
-      name: Designator
-    - Footprint
-    - field: LCSC#
-      name: 'LCSC Part #'
-    csv:
-      hide_pcb_info: true
-      hide_stats_info: true
-      quote_all: true
 - name: JLCPCB
   comment: ZIP file for JLCPCB
   type: compress
@@ -192,6 +167,4 @@ outputs:
     - from_output: JLCPCB_drill
       dest: /
     - from_output: JLCPCB_position
-      dest: /
-    - from_output: JLCPCB_bom
       dest: /
