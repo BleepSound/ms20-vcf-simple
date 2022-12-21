@@ -9,3 +9,4 @@ outputs:
   comment: Interactive HTML BoM
   type: ibom
   dir: BoM
+  output_id: -jack
