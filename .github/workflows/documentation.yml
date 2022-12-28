@@ -61,7 +61,7 @@ jobs:
       with:
           default_author: github_actions
           message: 'add main BoM and images'
-          tag: ${{ env.Version }}
+          #tag: ${{ env.Version }}
 
   BOM-jack:
     runs-on: ubuntu-latest

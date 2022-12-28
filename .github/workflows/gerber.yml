@@ -53,6 +53,14 @@ jobs:
         name: ${{ env.BaseFileName }}-Front-${{ github.event.inputs.version }}-${{ steps.date_only.outputs.date_only }}
         path: ${{ env.BOMFolder }}/**
 
+    #Commit all the outputs to folder
+    - name: Add & Commit
+      uses: EndBug/add-and-commit@v9.1.1
+      with:
+          default_author: github_actions
+          message: 'add front gerber'
+          #tag: ${{ env.Version }}
+
   Gerber-jack:
     runs-on: ubuntu-latest
     steps:
@@ -77,3 +85,11 @@ jobs:
       with:
         name: ${{ env.BaseFileName }}-jackboard-${{ github.event.inputs.version }}-${{ steps.date_only.outputs.date_only }}
         path: ${{ env.BOMFolder }}/**
+    
+    #Commit all the outputs to folder
+    - name: Add & Commit
+      uses: EndBug/add-and-commit@v9.1.1
+      with:
+          default_author: github_actions
+          message: 'add jack gerber'
+          #tag: ${{ env.Version }}
