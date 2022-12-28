@@ -216,7 +216,7 @@
       (net 14 "Net-(R14-Pad2)") (pinfunction "2") (pintype "passive") (tstamp fb5b3d10-1b19-4b17-9849-a44c574b33d6))
     (pad "3" thru_hole circle (at 0 -5 90) (size 1.8 1.8) (drill 1) (layers *.Cu *.Mask)
       (net 1 "GND") (pinfunction "3") (pintype "passive") (tstamp b39b0e17-9bc0-49ed-b95f-fa23cca2170c))
-    (model "${KICAD6_3DMODEL_DIR}/Potentiometer_THT.3dshapes/RK09K1130AH1.STEP"
+    (model "${KIPRJMOD}/3D/RK09K1130AH1.STEP"
       (offset (xyz 7 2.5 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 90))
@@ -270,7 +270,7 @@
       (net 17 "Net-(R15-Pad2)") (pinfunction "2") (pintype "passive") (tstamp 37616951-5c5d-4a01-a947-b2f563ad895a))
     (pad "3" thru_hole circle (at 0 -5 90) (size 1.8 1.8) (drill 1) (layers *.Cu *.Mask)
       (net 18 "Net-(R18-Pad2)") (pinfunction "3") (pintype "passive") (tstamp cffd2e90-30f3-4048-8528-93158c76181c))
-    (model "${KICAD6_3DMODEL_DIR}/Potentiometer_THT.3dshapes/RK09K1130AH1.STEP"
+    (model "${KIPRJMOD}/3D/RK09K1130AH1.STEP"
       (offset (xyz 7 2.5 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 90))
@@ -705,7 +705,7 @@
       (net 15 "/CVIn") (pintype "passive") (tstamp a8cf41ee-1d56-4414-94ff-dc931bf4f645))
     (pad "TN" thru_hole circle (at 0 3.1 180) (size 2.13 2.13) (drill 1.42) (layers *.Cu *.Mask)
       (net 40 "unconnected-(J6-PadTN)") (pintype "passive+no_connect") (tstamp 31d2eac2-0406-4941-b469-cf4ce990feb8))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_BarrelJack.3dshapes/PJ301M-12 Thonkiconn v0.2.stp"
+    (model "${KIPRJMOD}/3D/PJ301M-12 Thonkiconn v0.2.stp"
       (offset (xyz 0 -7 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -768,7 +768,7 @@
       (net 30 "/FilterIn") (pintype "passive") (tstamp c7808508-e8b9-4506-ab16-ac70c73035f9))
     (pad "TN" thru_hole circle (at 0 3.1 180) (size 2.13 2.13) (drill 1.42) (layers *.Cu *.Mask)
       (net 41 "unconnected-(J7-PadTN)") (pintype "passive+no_connect") (tstamp b4bb0d0f-baa2-449c-80ec-1e7486045d1b))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_BarrelJack.3dshapes/PJ301M-12 Thonkiconn v0.2.stp"
+    (model "${KIPRJMOD}/3D/PJ301M-12 Thonkiconn v0.2.stp"
       (offset (xyz 0 -7 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -831,7 +831,7 @@
       (net 31 "/JackOut") (pintype "passive") (tstamp 1784f51e-d4d7-42b5-98d3-80de0b906523))
     (pad "TN" thru_hole circle (at 0 3.1 180) (size 2.13 2.13) (drill 1.42) (layers *.Cu *.Mask)
       (net 42 "unconnected-(J8-PadTN)") (pintype "passive+no_connect") (tstamp 4ccd6700-b594-470f-9060-342367d05948))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_BarrelJack.3dshapes/PJ301M-12 Thonkiconn v0.2.stp"
+    (model "${KIPRJMOD}/3D/PJ301M-12 Thonkiconn v0.2.stp"
       (offset (xyz 0 -7 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -1793,7 +1793,7 @@
       (net 29 "/ResOut") (pinfunction "2") (pintype "passive") (tstamp 191583d6-f1bd-4733-95d9-323e5946f560))
     (pad "3" thru_hole circle (at 0 -5 90) (size 1.8 1.8) (drill 1) (layers *.Cu *.Mask)
       (net 1 "GND") (pinfunction "3") (pintype "passive") (tstamp 12ef6f1b-86f2-423f-9664-6d099d8b7cf4))
-    (model "${KICAD6_3DMODEL_DIR}/Potentiometer_THT.3dshapes/RK09K1130AH1.STEP"
+    (model "${KIPRJMOD}/3D/RK09K1130AH1.STEP"
       (offset (xyz 7 2.5 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 90))
@@ -1848,7 +1848,7 @@
       (net 12 "/HPass") (pinfunction "B") (pintype "passive") (tstamp f7fc8188-df6f-40a8-9e41-52824d4ca780))
     (pad "6" thru_hole oval (at -4.7 2.4 180) (size 3.7 2.4) (drill oval 2.2 1) (layers *.Cu *.Mask)
       (net 1 "GND") (pinfunction "C") (pintype "passive") (tstamp f1859ff8-2c72-4fff-ad13-f95a6df5aaf2))
-    (model "${KICAD6_3DMODEL_DIR}/Button_Switch_THT.3dshapes/Toggle Switch - Double .step"
+    (model "${KIPRJMOD}/3D/Toggle Switch - Double .step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 90))
