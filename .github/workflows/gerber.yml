@@ -59,6 +59,7 @@ jobs:
       with:
           default_author: github_actions
           message: 'add front gerber'
+          pull: ''
           #tag: ${{ env.Version }}
 
   Gerber-jack:
@@ -92,4 +93,5 @@ jobs:
       with:
           default_author: github_actions
           message: 'add jack gerber'
+          pull: ''
           #tag: ${{ env.Version }}

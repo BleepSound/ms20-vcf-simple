@@ -61,6 +61,7 @@ jobs:
       with:
           default_author: github_actions
           message: 'add main BoM and images'
+          pull: ''
           #tag: ${{ env.Version }}
 
   BOM-jack:
@@ -94,4 +95,5 @@ jobs:
       with:
           default_author: github_actions
           message: 'add jack BoM'
+          pull: ''
           #tag: ${{ env.Version }}
