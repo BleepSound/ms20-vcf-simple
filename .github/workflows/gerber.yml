@@ -43,7 +43,7 @@ jobs:
       with:
         # Required - kibot config file
         config: .kibot/config_fab_front.kibot.yaml
-        dir: ${{ env.BOMFolder }}
+        dir: ${{ env.GerberFolder }}
         board: fabrication/front/${{ env.BaseFileName }}.kicad_pcb
         
     # Archive all the artifacts from output and attach to the action's results.
@@ -85,7 +85,7 @@ jobs:
       uses: actions/upload-artifact@v3
       with:
         name: ${{ env.BaseFileName }}-jackboard-${{ github.event.inputs.version }}-${{ steps.date_only.outputs.date_only }}
-        path: ${{ env.BOMFolder }}/**
+        path: ${{ env.GerberFolder }}/**
     
     #Commit all the outputs to folder
     - name: Add & Commit

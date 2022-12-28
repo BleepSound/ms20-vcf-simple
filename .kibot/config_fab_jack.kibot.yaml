@@ -135,7 +135,7 @@ outputs:
 - name: Gerber_front
   comment: ZIP file for JLCPCB
   type: compress
-  dir: /
+  #dir: /
   options:
     files:
     - from_output: JLCPCB_gerbers
