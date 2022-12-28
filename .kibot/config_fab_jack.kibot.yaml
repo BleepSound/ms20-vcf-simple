@@ -132,7 +132,7 @@ outputs:
     map: gerber
     route_mode_for_oval_holes: false
     output: '%f%i.%x'
-- name: Gerber_front
+- name: Gerber_jack
   comment: ZIP file for JLCPCB
   type: compress
   #dir: /
