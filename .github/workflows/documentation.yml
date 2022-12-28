@@ -61,7 +61,7 @@ jobs:
       with:
           default_author: github_actions
           message: 'add main BoM and images'
-          pull: ''
+          pull: '--ff-only'
           #tag: ${{ env.Version }}
 
   BOM-jack:
@@ -95,5 +95,5 @@ jobs:
       with:
           default_author: github_actions
           message: 'add jack BoM'
-          pull: ''
+          pull: '--ff-only'
           #tag: ${{ env.Version }}
