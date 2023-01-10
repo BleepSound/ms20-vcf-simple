@@ -43,6 +43,7 @@ outputs:
   options:
     ray_tracing: true
     orthographic: true
+    zoom: 3
 - name: basic_render_3d_30deg
   comment: 3D view from 30 degrees
   type: render_3d
@@ -52,6 +53,7 @@ outputs:
     ray_tracing: true
     rotate_x: 3
     rotate_z: -2
+    zoom: 3
 - name: basic_render_3d_bottom
   comment: 3D view from bottom
   type: render_3d
@@ -60,3 +62,13 @@ outputs:
     ray_tracing: true
     orthographic: true
     view: bottom
+    zoom: 3
+
+- name: Populate
+    comment: "Guide de montage PCB"
+    type: populate
+    dir: guide
+    options:
+      format: md
+      renderer: render_3d
+      input: Populate.md
