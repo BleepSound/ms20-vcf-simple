@@ -71,4 +71,4 @@ outputs:
   options:
     format: md
     renderer: render_3d
-    input: Populate.md
+    input: .kibot/Populate.md
