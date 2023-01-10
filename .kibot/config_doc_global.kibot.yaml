@@ -70,5 +70,5 @@ outputs:
   dir: guide
   options:
     format: md
-    renderer: render_3d
+    renderer: Render_3D
     input: .kibot/Populate.md
