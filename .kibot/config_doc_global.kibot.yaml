@@ -65,13 +65,13 @@ outputs:
     zoom: 3
 
 - name: render_3d
-    comment: "How to draw a step"
-    type: render_3d
-    run_by_default: false
-    options:
-      format: png
-      ray_tracing: true
-      zoom: 3
+  comment: "How to draw a step"
+  type: render_3d
+  run_by_default: false
+  options:
+    format: png
+    ray_tracing: true
+    zoom: 3
 
 - name: Populate
   comment: "Guide de montage PCB"
