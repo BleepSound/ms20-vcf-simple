@@ -1,5 +1,5 @@
 ---
-permalink: /ms20_vcf/simple/index.html
+permalink: /index.html
 layout: single
 ---
 
