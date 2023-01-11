@@ -74,7 +74,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory "Gerber/")
+      (outputdirectory "")
     )
   )
 
@@ -216,7 +216,7 @@
       (net 14 "Net-(R14-Pad2)") (pinfunction "2") (pintype "passive") (tstamp fb5b3d10-1b19-4b17-9849-a44c574b33d6))
     (pad "3" thru_hole circle (at 0 -5 90) (size 1.8 1.8) (drill 1) (layers *.Cu *.Mask)
       (net 1 "GND") (pinfunction "3") (pintype "passive") (tstamp b39b0e17-9bc0-49ed-b95f-fa23cca2170c))
-    (model "${KICAD6_3DMODEL_DIR}/Potentiometer_THT.3dshapes/RK09K1130AH1.STEP"
+    (model "${KIPRJMOD}/3D/RK09K1130AH1.STEP"
       (offset (xyz 7 2.5 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 90))
@@ -270,7 +270,7 @@
       (net 17 "Net-(R15-Pad2)") (pinfunction "2") (pintype "passive") (tstamp 37616951-5c5d-4a01-a947-b2f563ad895a))
     (pad "3" thru_hole circle (at 0 -5 90) (size 1.8 1.8) (drill 1) (layers *.Cu *.Mask)
       (net 18 "Net-(R18-Pad2)") (pinfunction "3") (pintype "passive") (tstamp cffd2e90-30f3-4048-8528-93158c76181c))
-    (model "${KICAD6_3DMODEL_DIR}/Potentiometer_THT.3dshapes/RK09K1130AH1.STEP"
+    (model "${KIPRJMOD}/3D/RK09K1130AH1.STEP"
       (offset (xyz 7 2.5 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 90))
@@ -705,7 +705,7 @@
       (net 15 "/CVIn") (pintype "passive") (tstamp a8cf41ee-1d56-4414-94ff-dc931bf4f645))
     (pad "TN" thru_hole circle (at 0 3.1 180) (size 2.13 2.13) (drill 1.42) (layers *.Cu *.Mask)
       (net 40 "unconnected-(J6-PadTN)") (pintype "passive+no_connect") (tstamp 31d2eac2-0406-4941-b469-cf4ce990feb8))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_BarrelJack.3dshapes/PJ301M-12 Thonkiconn v0.2.stp"
+    (model "${KIPRJMOD}/3D/PJ301M-12 Thonkiconn v0.2.stp"
       (offset (xyz 0 -7 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -768,7 +768,7 @@
       (net 30 "/FilterIn") (pintype "passive") (tstamp c7808508-e8b9-4506-ab16-ac70c73035f9))
     (pad "TN" thru_hole circle (at 0 3.1 180) (size 2.13 2.13) (drill 1.42) (layers *.Cu *.Mask)
       (net 41 "unconnected-(J7-PadTN)") (pintype "passive+no_connect") (tstamp b4bb0d0f-baa2-449c-80ec-1e7486045d1b))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_BarrelJack.3dshapes/PJ301M-12 Thonkiconn v0.2.stp"
+    (model "${KIPRJMOD}/3D/PJ301M-12 Thonkiconn v0.2.stp"
       (offset (xyz 0 -7 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -831,7 +831,7 @@
       (net 31 "/JackOut") (pintype "passive") (tstamp 1784f51e-d4d7-42b5-98d3-80de0b906523))
     (pad "TN" thru_hole circle (at 0 3.1 180) (size 2.13 2.13) (drill 1.42) (layers *.Cu *.Mask)
       (net 42 "unconnected-(J8-PadTN)") (pintype "passive+no_connect") (tstamp 4ccd6700-b594-470f-9060-342367d05948))
-    (model "${KICAD6_3DMODEL_DIR}/Connector_BarrelJack.3dshapes/PJ301M-12 Thonkiconn v0.2.stp"
+    (model "${KIPRJMOD}/3D/PJ301M-12 Thonkiconn v0.2.stp"
       (offset (xyz 0 -7 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 180))
@@ -1793,7 +1793,7 @@
       (net 29 "/ResOut") (pinfunction "2") (pintype "passive") (tstamp 191583d6-f1bd-4733-95d9-323e5946f560))
     (pad "3" thru_hole circle (at 0 -5 90) (size 1.8 1.8) (drill 1) (layers *.Cu *.Mask)
       (net 1 "GND") (pinfunction "3") (pintype "passive") (tstamp 12ef6f1b-86f2-423f-9664-6d099d8b7cf4))
-    (model "${KICAD6_3DMODEL_DIR}/Potentiometer_THT.3dshapes/RK09K1130AH1.STEP"
+    (model "${KIPRJMOD}/3D/RK09K1130AH1.STEP"
       (offset (xyz 7 2.5 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 90))
@@ -1848,7 +1848,7 @@
       (net 12 "/HPass") (pinfunction "B") (pintype "passive") (tstamp f7fc8188-df6f-40a8-9e41-52824d4ca780))
     (pad "6" thru_hole oval (at -4.7 2.4 180) (size 3.7 2.4) (drill oval 2.2 1) (layers *.Cu *.Mask)
       (net 1 "GND") (pinfunction "C") (pintype "passive") (tstamp f1859ff8-2c72-4fff-ad13-f95a6df5aaf2))
-    (model "${KICAD6_3DMODEL_DIR}/Button_Switch_THT.3dshapes/Toggle Switch - Double .step"
+    (model "${KIPRJMOD}/3D/Toggle Switch - Double .step"
       (offset (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 90))
@@ -2742,7 +2742,7 @@
     (fp_line (start -1.45 -2.75) (end 4 -2.75) (layer "B.CrtYd") (width 0.05) (tstamp 868cd18d-c4f1-46f2-a0cc-b83df5e2c407))
     (fp_line (start -1.45 2.75) (end -1.45 -2.75) (layer "B.CrtYd") (width 0.05) (tstamp a437f2f3-05a6-40cd-8803-7b66462103ce))
     (fp_line (start -0.73 1.32665) (end -0.73 -1.32665) (layer "B.Fab") (width 0.1) (tstamp 5a272f04-adfa-4020-93fc-bb79f54c15d1))
-    (fp_arc (start -0.730339 -1.32614) (mid 3.670001 -0.000306) (end -0.73 1.32665) (layer "B.Fab") (width 0.1) (tstamp 04c1fdd4-d680-4e4e-81b7-e77c160a997d))
+    (fp_arc (start -0.730339 -1.32614) (mid 3.67 -0.000308) (end -0.73 1.32665) (layer "B.Fab") (width 0.1) (tstamp 04c1fdd4-d680-4e4e-81b7-e77c160a997d))
     (fp_circle (center 1.27 0) (end 3.27 0) (layer "B.Fab") (width 0.1) (fill none) (tstamp 89a1f0c1-80fa-483b-ba2b-3cc70f1c37ed))
     (pad "1" thru_hole rect (at 0 0 90) (size 1.8 1.8) (drill 0.9) (layers *.Cu *.Mask)
       (net 1 "GND") (pinfunction "K") (pintype "passive") (tstamp 7ad38fa8-f9f2-456f-80a1-f03f7e25eb0e))
@@ -2856,7 +2856,7 @@
     (fp_line (start -1.98 3.91) (end 4.52 3.91) (layer "B.Fab") (width 0.1) (tstamp d1bc3e02-7728-4fdf-bf30-e7473c9ea02a))
     (fp_line (start 4.52 3.91) (end 4.52 -14.07) (layer "B.Fab") (width 0.1) (tstamp e804bfb3-b2e2-4703-877d-411eee0f1660))
     (fp_line (start -1.98 -14.07) (end -1.98 -7.13) (layer "B.Fab") (width 0.1) (tstamp eb7a8a9b-8fb8-46ac-91b4-b2b97ce2bca3))
-    (pad "1" thru_hole roundrect (at 0 0 270) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask) (roundrect_rratio 0.1470588235)
+    (pad "1" thru_hole roundrect (at 0 0 270) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask) (roundrect_rratio 0.147059)
       (net 26 "Net-(FB2-Pad2)") (pinfunction "Pin_1") (pintype "passive") (tstamp f74a9511-e95a-4358-a137-4274036c9526))
     (pad "2" thru_hole circle (at 2.54 0 270) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 26 "Net-(FB2-Pad2)") (pinfunction "Pin_2") (pintype "passive") (tstamp a0fe8178-b965-4ad4-8d9c-e2397f4d6d2d))
@@ -3276,7 +3276,6 @@
     )
   )
 
-  (gr_line (start 30 25) (end 30 31) (layer "Dwgs.User") (width 0.05) (tstamp 00000000-0000-0000-0000-000061118b5d))
   (gr_line (start 42 110) (end 42 143) (layer "Dwgs.User") (width 0.1) (tstamp 72e53236-4ffe-4869-9bd9-88ce0f3c0553))
   (gr_line (start 85 36.5) (end 85 146.5) (layer "Edge.Cuts") (width 0.05) (tstamp 00000000-0000-0000-0000-000061200376))
   (gr_line (start 35 36.5) (end 85 36.5) (layer "Edge.Cuts") (width 0.05) (tstamp 44caae53-1a52-43c9-bdd2-601a68a99b9d))
@@ -3287,27 +3286,6 @@
   )
   (gr_text "MS-20 VCF\nV1.1 BleepSound\n2022" (at 42 39.5) (layer "F.SilkS") (tstamp 8ca2d6d6-9109-4495-904e-bdfddf46383c)
     (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (gr_text "12HP\n" (at 62 32.5) (layer "Dwgs.User") (tstamp b9fb1e52-5bfb-4074-afb5-c49d4199f8ba)
-    (effects (font (size 1 1) (thickness 0.15)))
-  )
-  (dimension (type aligned) (layer "Dwgs.User") (tstamp 00000000-0000-0000-0000-00006165f468)
-    (pts (xy 30 25) (xy 30 158))
-    (height 8)
-    (gr_text "133.0000 mm" (at 20.85 91.5 90) (layer "Dwgs.User") (tstamp 00000000-0000-0000-0000-00006165f468)
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (format (units 2) (units_format 1) (precision 4))
-    (style (thickness 0.15) (arrow_length 1.27) (text_position_mode 0) (extension_height 0.58642) (extension_offset 0) keep_text_aligned)
-  )
-  (dimension (type aligned) (layer "Dwgs.User") (tstamp 6e58d35e-842e-41f9-b302-a0606bc2c8e5)
-    (pts (xy 33 31) (xy 33 25))
-    (height -6)
-    (gr_text "6.0000 mm" (at 25.85 28 90) (layer "Dwgs.User") (tstamp 6e58d35e-842e-41f9-b302-a0606bc2c8e5)
-      (effects (font (size 1 1) (thickness 0.15)))
-    )
-    (format (units 2) (units_format 1) (precision 4))
-    (style (thickness 0.15) (arrow_length 1.27) (text_position_mode 0) (extension_height 0.58642) (extension_offset 0) keep_text_aligned)
   )
 
   (segment (start 56.219954 78.2) (end 56.195388 78.224566) (width 0.3) (layer "F.Cu") (net 2) (tstamp 294e1c75-aba0-45c6-8b85-d46a6d0ab9a1))

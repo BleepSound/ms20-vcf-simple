@@ -5,7 +5,7 @@ layout: single
 
 # MS20 VCF
 
-Ms20-VCF clone based on BartonSynth version.
+MS20-VCF clone based on BartonSynth version.
 
 cutoff + resonance, with a switch to chose low pass or high pass mode.
 
@@ -34,7 +34,7 @@ Regular build, I use ceramic capacitors but you can use film/polyester.
 For the next part, always place them without soldering them on: 
 - jacks, pots and switches that go thought the front panel
 
-Once placed, put in place the front panel, then fasten all components to it> once this is done, you can solder them. 
+Once placed, put in place the front panel, then fasten all components to it. Once this is done, you can solder them. 
 
 ![3D single MS20-VCF(front)](Documentation/image/MS20-VCF-3D_top.png)
 
