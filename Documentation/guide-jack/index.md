@@ -60,15 +60,18 @@ The back is done, we can flip the PCB and start the front !
 
 ![step](img/populating_13.png)
 
-The last step is ther, the jacks, potentiometers and switches. basically, anything that is accessible throught the front panel. You first place them.
-DO NOT SOLDER THEM YET (this is really important !!)
+The last step concern the jacks, potentiometers and switches. Basically, anything that is accessible throught the front panel. You first place them.
+
+:warning: DO NOT SOLDER THEM YET :warning:
+
+(this is really important !!)
 
 
-####  Do Not Solder Them
+####  Do Not Solder Them! place them first and put the front panel in place. _For the pot __CUTCV1__ , use the small 100k pot (not D shaped)_  The other pots are for CUTOFF1 and Res1. You'll be able to put the" knobs of your choice on those.
 
 ![step](img/populating_14.png)
 
-You then put in place the front panel, making sure everything fits. Once all the jack sockets and switches are fastenned to the front panel, you van solder them, and only then !!!
+You then put in place the front panel, making sure everything fits. Once all the jack sockets and switches are fastenned to the front panel, you can solder them, and only then !!!
 
 ## Conclusion
 
