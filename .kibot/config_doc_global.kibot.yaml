@@ -11,7 +11,15 @@ outputs:
   dir: BoM
   options:
     format: XLSX
-    count_smd_tht: false
+    columns:
+    - Row
+    - Description
+    - References
+    - Value
+    - Quantity Per PCB
+    - Comment
+    count_smd_tht: true
+    logo: false
 
 - name: basic_ibom
   comment: Interactive HTML BoM
