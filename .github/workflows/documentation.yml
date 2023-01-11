@@ -80,6 +80,7 @@ jobs:
         # Required - kibot config file
         config: .kibot/config_bom_jack.kibot.yaml
         dir: ${{ env.DocFolder }}
+        schema: kicad-global/${{ env.BaseFileName }}.kicad_sch
         board: fabrication/jackboard/${{ env.BaseFileName }}.kicad_pcb
         
     # Archive all the artifacts from output and attach to the action's results.
