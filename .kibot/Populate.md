@@ -21,12 +21,15 @@ The back is done, we can flip the PCB and start the front !
 - [[front | U2 ]] Add the socket for the TL072, making sure you get the orientation right. Don't add the Tl072 yet, you'll add it at the end. 
 - [[front | C1, C4 , C7, C8]] Add the capacitors
 
-The last step is ther, the jacks, potentiometers and switches. basically, anything that is accessible throught the front panel. You first place them.
-DO NOT SOLDER THEM YET (this is really important !!)
+The last step concern the jacks, potentiometers and switches. Basically, anything that is accessible throught the front panel. You first place them.
 
-- [[front | SW1, CUTCV1, CUTOFF1, Res1, J6, J7, J8]] Do Not Solder Them
+:warning: DO NOT SOLDER THEM YET :warning:
 
-You then put in place the front panel, making sure everything fits. Once all the jack sockets and switches are fastenned to the front panel, you van solder them, and only then !!!
+(this is really important !!)
+
+- [[front | SW1, CUTCV1, CUTOFF1, Res1, J6, J7, J8]] Do Not Solder Them! place them first and put the front panel in place. *For the pot **CUTCV1**, use the small 100k pot (not D shaped)* The other pots are for CUTOFF1 and Res1. You'll be able to put the" knobs of your choice on those.
+
+You then put in place the front panel, making sure everything fits. Once all the jack sockets and switches are fastenned to the front panel, you can solder them, and only then !!!
 
 ## Conclusion
 
