@@ -16,6 +16,7 @@ outputs:
     - Description
     - References
     - Value
+    - Footprint
     - Quantity Per PCB
     - Comment
     count_smd_tht: true
