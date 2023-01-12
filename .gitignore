@@ -28,3 +28,7 @@ fp-info-cache
 
 #backup folder
 **-backups
+
+_site
+Makefile
+Gemfile.lock
