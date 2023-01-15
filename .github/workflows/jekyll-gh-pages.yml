@@ -17,7 +17,6 @@ concurrency:
 jobs:
   # Build job
   build:
-    on: push
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
