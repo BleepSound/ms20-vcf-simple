@@ -3284,6 +3284,7 @@
     )
   )
 
+  (gr_circle (center 42 81.06) (end 42.1 81.16) (layer "B.SilkS") (width 0.12) (fill none) (tstamp 8e0100ab-5bec-42c9-88a7-058bf79e923b))
   (gr_line (start 42 110) (end 42 143) (layer "Dwgs.User") (width 0.1) (tstamp 72e53236-4ffe-4869-9bd9-88ce0f3c0553))
   (gr_line (start 85 36.5) (end 85 146.5) (layer "Edge.Cuts") (width 0.05) (tstamp 00000000-0000-0000-0000-000061200376))
   (gr_line (start 35 36.5) (end 85 36.5) (layer "Edge.Cuts") (width 0.05) (tstamp 44caae53-1a52-43c9-bdd2-601a68a99b9d))
@@ -3292,7 +3293,7 @@
   (gr_text "JLCJLCJLCJLC" (at 83.75 130.5 90) (layer "B.SilkS") (tstamp 00000000-0000-0000-0000-00006165f464)
     (effects (font (size 1.5 1.5) (thickness 0.3)) (justify mirror))
   )
-  (gr_text "MS-20 VCF\nV1.1 BleepSound\n2022" (at 42 39.5) (layer "F.SilkS") (tstamp 8ca2d6d6-9109-4495-904e-bdfddf46383c)
+  (gr_text "MS-20 VCF\nV1.2 BleepSound\n2023" (at 42 39.5) (layer "F.SilkS") (tstamp 8ca2d6d6-9109-4495-904e-bdfddf46383c)
     (effects (font (size 1 1) (thickness 0.15)))
   )
   (gr_text "12HP\n" (at 62 32.5) (layer "Dwgs.User") (tstamp b9fb1e52-5bfb-4074-afb5-c49d4199f8ba)
