@@ -10,5 +10,4 @@ exclude:
 
 plugins:
   - jekyll-include-cache
-  - jekyll-feed
-  - jekyll-emoji
+  - jemoji
