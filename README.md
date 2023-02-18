@@ -7,6 +7,8 @@ layout: single
 
 MS20-VCF clone based on BartonSynth version.
 
+Size: 10HP
+
 cutoff + resonance, with a switch to chose low pass or high pass mode.
 
 CV control on the filter cutoff.
