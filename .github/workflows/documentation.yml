@@ -1,7 +1,9 @@
 name: Documentation
 
 on:
-  push
+  push:
+    branches:
+      - main
   workflow_dispatch:
     inputs:
       version:
